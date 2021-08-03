@@ -9,7 +9,9 @@ export class CustomFormatPipe extends DecimalPipe implements PipeTransform {
     super(locale);
   }
 
-  transform(value: string | number, format: string = null): string {
+  transform(value: number | string, digitsInfo?: string, locale?: string): string | null;
+  transform(value: null | undefined, digitsInfo?: string, locale?: string): null;
+  transform(value: number | string | null | undefined, digitsInfo?: string, locale?: string): string | null {
     if (value === null || value === undefined) {
       return null;
     }
@@ -18,6 +20,6 @@ export class CustomFormatPipe extends DecimalPipe implements PipeTransform {
       value = value.toString();
     }
 
-    return value === '0' ? 'EMPTY' : !format ? value : super.transform(value, format);
+    return value === '0' ? 'EMPTY' : !digitsInfo ? value : super.transform(value, digitsInfo);
   }
 }
