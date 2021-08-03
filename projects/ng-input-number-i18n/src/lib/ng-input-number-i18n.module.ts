@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
   providers: [DecimalPipe]
 })
 export class NgInputNumberI18nModule {
-  static forRoot(configuration?: NgInputNumberI18nConfig): ModuleWithProviders {
+  static forRoot(configuration?: NgInputNumberI18nConfig): ModuleWithProviders<NgInputNumberI18nModule> {
 
     return {
       ngModule: NgInputNumberI18nModule,
@@ -43,7 +43,7 @@ export class NgInputNumberI18nModule {
     };
   }
 
-  static forFeature(configuration?: NgInputNumberI18nConfig): ModuleWithProviders {
+  static forFeature(configuration?: NgInputNumberI18nConfig): ModuleWithProviders<NgInputNumberI18nModule> {
     return NgInputNumberI18nModule.forRoot(configuration);
   }
 }
