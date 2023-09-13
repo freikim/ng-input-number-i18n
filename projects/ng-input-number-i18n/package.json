@@ -1,6 +1,6 @@
 {
   "name": "@freikim/ng-input-number-i18n",
-  "version": "1.1.3",
+  "version": "1.15.0",
   "keywords": [
     "angular",
     "input",
@@ -11,7 +11,7 @@
     "directive",
     "angular14"
   ],
-  "description": "Angular 14 compatible version of @danielzotti/ng-input-number-i18n. It's a special directive to format decimal numbers inside input and textarea, based on the current locale",
+  "description": "Angular 15 compatible version of @danielzotti/ng-input-number-i18n. It's a special directive to format decimal numbers inside input and textarea, based on the current locale",
   "repository": {
     "type": "git",
     "url": "https://github.com/freikim/ng-input-number-i18n/"
@@ -20,7 +20,7 @@
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "@angular/common": "^14.3.0",
-    "@angular/core": "^14.3.0"
+    "@angular/common": "^15.2.9",
+    "@angular/core": "^15.2.9"
   }
 }
