@@ -1,5 +1,9 @@
-# @danielzotti/ng-input-number-i18n
+# @freikim/ng-input-number-i18n
 
+This is an Angular 12 compatible version of @danielzotti/ng-input-number-i18n. The rest of the
+readme file is unmodified from the original. The source for this version can be found at [Angular 12 version](https://github.com/freikim/ng-input-number-i18n) 
+
+-----
 A simple directive which manages decimal numbers in `input` and `textarea` inside a `ngForm`.
 
 - It stores the **value as a JavaScript float** but it displays the formatted number based on `locale` (with decimal and thousands separator). 
