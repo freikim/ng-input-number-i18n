@@ -9,7 +9,7 @@
     "number",
     "decimal",
     "directive",
-    "angular14"
+    "angular15"
   ],
   "description": "Angular 15 compatible version of @danielzotti/ng-input-number-i18n. It's a special directive to format decimal numbers inside input and textarea, based on the current locale",
   "repository": {
